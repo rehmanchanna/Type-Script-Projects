@@ -1,6 +1,6 @@
 {
   "name": "arc_project01_number_guessing_game",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is Number Guessing Game Project for TypeScript Practice.",
   "main": "index.js",
   "type": "module",
