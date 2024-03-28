@@ -1,6 +1,7 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let author = "ARC";
-console.log(`Wellcom to ${author} ATM Machine.`);
+console.log(`Welcome to ${author} ATM Machine.`);
 let myBalance = 20000;
 let MyPinCode = 1101;
 let pinAnswer = await inquirer.prompt([
