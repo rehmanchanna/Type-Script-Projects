@@ -1,5 +1,6 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
-console.log("\t **Welcome to ARC Todo List**");
+console.log("\t **Welcome to ARC To-Do List**");
 let toDos = [];
 let loop = true;
 let answer1;
@@ -41,7 +42,7 @@ async function addTodo() {
         {
             type: "input",
             name: "todo",
-            message: "Please Insert Any String, What do you want to Add Item? "
+            message: "Please Insert Any Activity, What do you want to Add Today? "
         }
     ]);
     toDos.push(answer2.todo);
@@ -54,7 +55,7 @@ async function deleteTodo() {
                 type: "list",
                 name: "menuOpt",
                 choices: toDos,
-                message: "If you want to Delete Item then Please type Item: "
+                message: "If you want to Delete any activity then Please type: "
             }
         ]);
         let i = 0;
@@ -68,6 +69,6 @@ async function deleteTodo() {
         console.log(toDos);
     }
     else {
-        console.log("Yet, You have not add any item, first add string item then delete item: ");
+        console.log("Yet, You have not add any Activity, first add any Activity then delete item: ");
     }
 }
