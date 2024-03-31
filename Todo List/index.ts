@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 console.log("\t **Welcome to ARC To-Do List**")
 interface ansType{
